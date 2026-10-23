@@ -215,6 +215,12 @@ tempCodeRunnerFile.py
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# project data and models (never commit these)
+data/raw/
+data/processed/
+*.pth
+*.pt
+.env
 
 # Streamlit
 .streamlit/secrets.toml
