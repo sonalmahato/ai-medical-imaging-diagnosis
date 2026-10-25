@@ -1,0 +1,62 @@
+{
+  "args": {
+    "csv": "data/processed/splits.csv",
+    "img_dir": "data/processed/images",
+    "out": "outputs/sample_run",
+    "epochs": 5,
+    "bs": 32,
+    "lr": 0.0001,
+    "workers": 4,
+    "limit": null
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.2769,
+      "val_macro_auroc": 0.6909
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.1666,
+      "val_macro_auroc": 0.7419
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1566,
+      "val_macro_auroc": 0.7516
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.149,
+      "val_macro_auroc": 0.7695
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1395,
+      "val_macro_auroc": 0.7588
+    }
+  ],
+  "best_val_macro_auroc": 0.7695154229648163,
+  "test_macro_auroc": 0.7757023571081978,
+  "test_per_class_auroc": {
+    "Atelectasis": 0.8188642057176541,
+    "Cardiomegaly": 0.8526310401310402,
+    "Effusion": 0.8394834474885845,
+    "Infiltration": 0.6384318463381421,
+    "Mass": 0.686180165731088,
+    "Nodule": 0.6443561872909699,
+    "Pneumonia": 0.7870937032503741,
+    "Pneumothorax": 0.9041037234953585,
+    "Consolidation": 0.782791146761735,
+    "Edema": 0.874649448901063,
+    "Emphysema": 0.7491625310173697,
+    "Fibrosis": 0.7459561834561834,
+    "Pleural_Thickening": 0.7155233093291462,
+    "Hernia": 0.8206060606060606
+  },
+  "n_images": {
+    "train": 3931,
+    "val": 849,
+    "test": 826
+  }
+}
