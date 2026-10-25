@@ -1,0 +1,46 @@
+schema: '2.0'
+stages:
+  make_splits:
+    cmd: python src/data/make_splits.py
+    deps:
+    - path: data/raw/nih_sample
+      hash: md5
+      md5: 894d1368e515c86e20c2ad59225dccf5.dir
+      size: 4504357760
+      nfiles: 11214
+    - path: src/data/make_splits.py
+      hash: md5
+      md5: 98eac6e4cdbbb6caf6ba66fdf2aaa411
+      size: 1510
+    params:
+      params.yaml:
+        seed: 42
+        split:
+          train: 0.7
+          val: 0.15
+          test: 0.15
+    outs:
+    - path: data/processed/splits.csv
+      hash: md5
+      md5: 82d09538f9bb992eae1c5d2ac852c477
+      size: 619619
+  preprocess:
+    cmd: python src/data/preprocess.py
+    deps:
+    - path: data/processed/splits.csv
+      hash: md5
+      md5: 82d09538f9bb992eae1c5d2ac852c477
+      size: 619619
+    - path: src/data/preprocess.py
+      hash: md5
+      md5: 6924427c58776bc870414d1b1b8e9cb0
+      size: 664
+    params:
+      params.yaml:
+        img_size: 224
+    outs:
+    - path: data/processed/images
+      hash: md5
+      md5: 8df7f7e451d43910169d65b6d042034e.dir
+      size: 138856340
+      nfiles: 5606

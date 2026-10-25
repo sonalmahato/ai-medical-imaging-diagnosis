@@ -1,0 +1,7 @@
+[core]
+    remote = storage
+[cache]
+    type = "hardlink,copy"
+    protected = true
+['remote "storage"']
+    url = C:\dvc-storage

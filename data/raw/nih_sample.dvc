@@ -1,0 +1,6 @@
+outs:
+- md5: 894d1368e515c86e20c2ad59225dccf5.dir
+  size: 4504357760
+  nfiles: 11214
+  hash: md5
+  path: nih_sample

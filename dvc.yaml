@@ -1,0 +1,20 @@
+stages:
+  make_splits:
+    cmd: python src/data/make_splits.py
+    deps:
+      - src/data/make_splits.py
+      - data/raw/nih_sample
+    params:
+      - seed
+      - split
+    outs:
+      - data/processed/splits.csv
+  preprocess:
+    cmd: python src/data/preprocess.py
+    deps:
+      - src/data/preprocess.py
+      - data/processed/splits.csv
+    params:
+      - img_size
+    outs:
+      - data/processed/images
