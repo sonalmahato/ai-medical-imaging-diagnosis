@@ -1,0 +1,9 @@
+group,n_images,n_patients,macro_auroc,ci95_low,ci95_high,classes_used
+overall,25596,2797,0.8041,0.7982,0.8103,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
+sex=M,14882,1557,0.8066,0.7984,0.8133,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
+sex=F,10714,1240,0.8005,0.7912,0.8088,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
+view=PA,11096,2647,0.8032,0.7966,0.8088,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
+view=AP,14500,1188,0.7784,0.771,0.7858,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
+age<40,8290,1048,0.8096,0.7991,0.8189,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
+age40-59,11224,1169,0.802,0.7922,0.8116,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
+age60+,6078,686,0.7957,0.7856,0.8044,Atelectasis;Cardiomegaly;Effusion;Infiltration;Mass;Nodule;Pneumonia;Pneumothorax;Consolidation;Edema;Emphysema;Fibrosis;Pleural_Thickening
